@@ -5,8 +5,6 @@ function BookmarkDetails(props) {
     const [bookmarks, setBookmarks] = useState([]);
 
     useEffect(() => {
-
-
         fetch('http://localhost:8000/api/bookmarks')
         .then((res) => {
             return res.json();
@@ -16,9 +14,14 @@ function BookmarkDetails(props) {
         })
     }, []);
 
+
     return (
         <div>
-
+            { {bookmarks} ?
+             bookmarks.map((book, index) => (
+                 <h1> title {book._id} {} </h1>
+             ))
+             : <h1> Loading.. </h1>}
         </div>
     );
 }
