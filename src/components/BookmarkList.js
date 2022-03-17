@@ -22,6 +22,7 @@ function BookmarkList(props) {
                 <div>
                 <h1>Title: {book.title}</h1>
                 <h1>URL: {book.url}</h1>
+                <button>DELETE</button>
                 </div>
             )): <h1>loading..</h1>}
             
