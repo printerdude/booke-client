@@ -1,14 +1,11 @@
-
-   
 import React, { useEffect, useState } from 'react';
-// import BookmarkDelete from './components/BookmarkDelete';
+import BookmarkDelete from './BookmarkDelete';
 
 function BookmarkDetails(props) {
 
     return (
 			<div>
-				Bookmark Details component
-				{/* <BookmarkDelete /> */}
+				<BookmarkDelete />
 			</div>
 		);
 }
